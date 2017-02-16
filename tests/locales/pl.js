@@ -1,15 +1,15 @@
 module.exports = function(t, tb) {
   // test second
   t.equal(tb.subSeconds(1), 'w tej chwili');
-  t.equal(tb.subSeconds(10), '10 sekund temu');
-  t.equal(tb.subSeconds(12), '12 sekund temu');
-  t.equal(tb.subSeconds(22), '22 sekundy temu');
-  t.equal(tb.subSeconds(25), '25 sekund temu');
+  t.equal(tb.subSeconds(10), 'w tej chwili');
+  t.equal(tb.subSeconds(12), 'w tej chwili');
+  t.equal(tb.subSeconds(22), 'w tej chwili');
+  t.equal(tb.subSeconds(25), 'w tej chwili');
   t.equal(tb.addSeconds(1), 'za chwilę');
-  t.equal(tb.addSeconds(10), 'za 10 sekund');
-  t.equal(tb.addSeconds(12), 'za 12 sekund');
-  t.equal(tb.addSeconds(22), 'za 22 sekundy');
-  t.equal(tb.addSeconds(25), 'za 25 sekund');
+  t.equal(tb.addSeconds(10), 'za chwilę');
+  t.equal(tb.addSeconds(12), 'za chwilę');
+  t.equal(tb.addSeconds(22), '');
+  t.equal(tb.addSeconds(25), 'za chwilę');
 
   // test minute
   t.equal(tb.subMinutes(1), '1 minutę temu');

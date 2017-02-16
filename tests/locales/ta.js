@@ -1,13 +1,13 @@
 module.exports = function(t, tb) {
   // test second
   t.equal(tb.subSeconds(1), 'இப்போது');
-  t.equal(tb.subSeconds(10),  '10 நொடிக்கு முன்');
-  t.equal(tb.subSeconds(21), '21 நொடிக்கு முன்');
-  t.equal(tb.subSeconds(22), '22 நொடிக்கு முன்');
+  t.equal(tb.subSeconds(10),  'இப்போது');
+  t.equal(tb.subSeconds(21), 'இப்போது');
+  t.equal(tb.subSeconds(22), 'இப்போது');
   t.equal(tb.addSeconds(1), 'சற்று நேரம் முன்பு');
-  t.equal(tb.addSeconds(10), '10 நொடிகளில்');
-  t.equal(tb.addSeconds(21), '21 நொடிகளில்');
-  t.equal(tb.addSeconds(22), '22 நொடிகளில்');
+  t.equal(tb.addSeconds(10), 'சற்று நேரம் முன்பு');
+  t.equal(tb.addSeconds(21), 'சற்று நேரம் முன்பு');
+  t.equal(tb.addSeconds(22), 'சற்று நேரம் முன்பு');
 
   // test minute
   t.equal(tb.subMinutes(1), '1 நிமிடத்திற்க்கு முன்');

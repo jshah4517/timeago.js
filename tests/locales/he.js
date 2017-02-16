@@ -1,13 +1,13 @@
 module.exports = function(t, tb) {
   // test second
   t.equal(tb.subSeconds(1), 'זה עתה');
-  t.equal(tb.subSeconds(10), 'לפני 10 שניות');
-  t.equal(tb.subSeconds(21), 'לפני 21 שניות');
-  t.equal(tb.subSeconds(22), 'לפני 22 שניות');
+  t.equal(tb.subSeconds(10), 'זה עתה');
+  t.equal(tb.subSeconds(21), 'זה עתה');
+  t.equal(tb.subSeconds(22), 'זה עתה');
   t.equal(tb.addSeconds(1), 'עכשיו');
-  t.equal(tb.addSeconds(10), 'בעוד 10 שניות');
-  t.equal(tb.addSeconds(21), 'בעוד 21 שניות');
-  t.equal(tb.addSeconds(22), 'בעוד 22 שניות');
+  t.equal(tb.addSeconds(10), 'עכשיו');
+  t.equal(tb.addSeconds(21), 'עכשיו');
+  t.equal(tb.addSeconds(22), 'עכשיו');
 
   // test minute
   t.equal(tb.subMinutes(1), 'לפני דקה');

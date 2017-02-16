@@ -1,13 +1,13 @@
 module.exports = function(t, tb) {
   // test second
   t.equal(tb.subSeconds(1), 'chiar acum');
-  t.equal(tb.subSeconds(10),  'acum 10 secunde');
-  t.equal(tb.subSeconds(21), 'acum 21 de secunde');
-  t.equal(tb.subSeconds(22), 'acum 22 de secunde');
+  t.equal(tb.subSeconds(10),  'chiar acum');
+  t.equal(tb.subSeconds(21), 'chiar acum');
+  t.equal(tb.subSeconds(22), 'chiar acum');
   t.equal(tb.addSeconds(1), 'chiar acum');
-  t.equal(tb.addSeconds(10), 'peste 10 secunde');
-  t.equal(tb.addSeconds(21), 'peste 21 de secunde');
-  t.equal(tb.addSeconds(22), 'peste 22 de secunde');
+  t.equal(tb.addSeconds(10), 'chiar acum');
+  t.equal(tb.addSeconds(21), 'chiar acum');
+  t.equal(tb.addSeconds(22), 'chiar acum');
 
   // test minute
   t.equal(tb.subMinutes(1), 'acum un minut');

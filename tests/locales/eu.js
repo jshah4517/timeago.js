@@ -1,13 +1,13 @@
 module.exports = function(t, tb) {
   // test second
   t.equal(tb.subSeconds(1), 'orain');
-  t.equal(tb.subSeconds(10),  'duela 10 segundu');
-  t.equal(tb.subSeconds(21), 'duela 21 segundu');
-  t.equal(tb.subSeconds(22), 'duela 22 segundu');
+  t.equal(tb.subSeconds(10),  'orain');
+  t.equal(tb.subSeconds(21), 'orain');
+  t.equal(tb.subSeconds(22), 'orain');
   t.equal(tb.addSeconds(1), 'denbora bat barru');
-  t.equal(tb.addSeconds(10), '10 segundu barru');
-  t.equal(tb.addSeconds(21), '21 segundu barru');
-  t.equal(tb.addSeconds(22), '22 segundu barru');
+  t.equal(tb.addSeconds(10), 'denbora bat barru');
+  t.equal(tb.addSeconds(21), 'denbora bat barru');
+  t.equal(tb.addSeconds(22), 'denbora bat barru');
 
   // test minute
   t.equal(tb.subMinutes(1), 'duela minutu 1');

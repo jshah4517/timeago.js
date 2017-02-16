@@ -1,13 +1,13 @@
 module.exports = function(t, tb) {
   // test second
   t.equal(tb.subSeconds(1), 'толькі што');
-  t.equal(tb.subSeconds(10), '10 секунд таму');
-  t.equal(tb.subSeconds(21), '21 секунду таму');
-  t.equal(tb.subSeconds(22), '22 секунды таму');
+  t.equal(tb.subSeconds(10), 'толькі што');
+  t.equal(tb.subSeconds(21), 'толькі што');
+  t.equal(tb.subSeconds(22), 'толькі што');
   t.equal(tb.addSeconds(1), 'праз некалькі секунд');
-  t.equal(tb.addSeconds(10), 'праз 10 секунд');
-  t.equal(tb.addSeconds(21), 'праз 21 секунду');
-  t.equal(tb.addSeconds(22), 'праз 22 секунды');
+  t.equal(tb.addSeconds(10), 'праз некалькі секунд');
+  t.equal(tb.addSeconds(21), 'праз некалькі секунд');
+  t.equal(tb.addSeconds(22), 'праз некалькі секунд');
 
   // test minute
   t.equal(tb.subMinutes(1), 'хвіліну таму');

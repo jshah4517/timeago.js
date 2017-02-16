@@ -1,13 +1,13 @@
 module.exports = function(t, tb) {
   // test second
   t.equal(tb.subSeconds(1), 'fa un moment');
-  t.equal(tb.subSeconds(10), 'fa 10 segons');
-  t.equal(tb.subSeconds(21), 'fa 21 segons');
-  t.equal(tb.subSeconds(22), 'fa 22 segons');
+  t.equal(tb.subSeconds(10), 'fa un moment');
+  t.equal(tb.subSeconds(21), 'fa un moment');
+  t.equal(tb.subSeconds(22), 'fa un moment');
   t.equal(tb.addSeconds(1), 'd\'aquí un moment');
-  t.equal(tb.addSeconds(10), 'd\'aquí 10 segons');
-  t.equal(tb.addSeconds(21), 'd\'aquí 21 segons');
-  t.equal(tb.addSeconds(22), 'd\'aquí 22 segons');
+  t.equal(tb.addSeconds(10), 'd\'aquí un moment');
+  t.equal(tb.addSeconds(21), 'd\'aquí un moment');
+  t.equal(tb.addSeconds(22), 'd\'aquí un moment');
 
   // test minute
   t.equal(tb.subMinutes(1), 'fa 1 minut');

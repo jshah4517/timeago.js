@@ -1,13 +1,13 @@
 module.exports = function(t, tb) {
   // test second
   t.equal(tb.subSeconds(1), 'すこし前');
-  t.equal(tb.subSeconds(10), '10秒前');
-  t.equal(tb.subSeconds(21), '21秒前');
-  t.equal(tb.subSeconds(22), '22秒前');
+  t.equal(tb.subSeconds(10), 'すこし前');
+  t.equal(tb.subSeconds(21), 'すこし前');
+  t.equal(tb.subSeconds(22), 'すこし前');
   t.equal(tb.addSeconds(1), 'すぐに');
-  t.equal(tb.addSeconds(10), '10秒以内');
-  t.equal(tb.addSeconds(21), '21秒以内');
-  t.equal(tb.addSeconds(22), '22秒以内');
+  t.equal(tb.addSeconds(10), 'すぐに');
+  t.equal(tb.addSeconds(21), 'すぐに');
+  t.equal(tb.addSeconds(22), 'すぐに');
 
   // test minute
   t.equal(tb.subMinutes(1), '1分前');

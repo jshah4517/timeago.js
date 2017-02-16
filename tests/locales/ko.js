@@ -1,13 +1,13 @@
 module.exports = function(t, tb) {
   // test second
   t.equal(tb.subSeconds(1), '방금');
-  t.equal(tb.subSeconds(10),  '10초 전');
-  t.equal(tb.subSeconds(21), '21초 전');
-  t.equal(tb.subSeconds(22), '22초 전');
+  t.equal(tb.subSeconds(10),  '방금');
+  t.equal(tb.subSeconds(21), '방금');
+  t.equal(tb.subSeconds(22), '방금');
   t.equal(tb.addSeconds(1), '곧');
-  t.equal(tb.addSeconds(10), '10초 후');
-  t.equal(tb.addSeconds(21), '21초 후');
-  t.equal(tb.addSeconds(22), '22초 후');
+  t.equal(tb.addSeconds(10), '곧');
+  t.equal(tb.addSeconds(21), '곧');
+  t.equal(tb.addSeconds(22), '곧');
 
   // test minute
   t.equal(tb.subMinutes(1), '1분 전');

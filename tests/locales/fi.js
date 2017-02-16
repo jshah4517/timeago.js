@@ -1,9 +1,9 @@
 module.exports = function(t, tb) {
   // test second
   t.equal(tb.subSeconds(1), 'juuri äsken');
-  t.equal(tb.subSeconds(22), '22 sekuntia sitten');
+  t.equal(tb.subSeconds(22), 'juuri äsken');
   t.equal(tb.addSeconds(1), 'juuri nyt');
-  t.equal(tb.addSeconds(22), '22 sekunnin päästä');
+  t.equal(tb.addSeconds(22), 'juuri nyt');
 
   // test minute
   t.equal(tb.subMinutes(1), 'minuutti sitten');

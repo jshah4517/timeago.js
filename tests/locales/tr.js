@@ -1,13 +1,13 @@
 module.exports = function(t, tb) {
   // test second
   t.equal(tb.subSeconds(1), 'az önce');
-  t.equal(tb.subSeconds(10),  '10 saniye önce');
-  t.equal(tb.subSeconds(21), '21 saniye önce');
-  t.equal(tb.subSeconds(22), '22 saniye önce');
+  t.equal(tb.subSeconds(10),  'az önce');
+  t.equal(tb.subSeconds(21), 'az önce');
+  t.equal(tb.subSeconds(22), 'az önce');
   t.equal(tb.addSeconds(1), 'şimdi');
-  t.equal(tb.addSeconds(10), '10 saniye içinde');
-  t.equal(tb.addSeconds(21), '21 saniye içinde');
-  t.equal(tb.addSeconds(22), '22 saniye içinde');
+  t.equal(tb.addSeconds(10), 'şimdi');
+  t.equal(tb.addSeconds(21), 'şimdi');
+  t.equal(tb.addSeconds(22), 'şimdi');
 
   // test minute
   t.equal(tb.subMinutes(1), '1 dakika önce');
