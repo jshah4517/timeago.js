@@ -1,7 +1,7 @@
 module.exports = function(number, index) {
   return [
     ['orain', 'denbora bat barru'],
-    ['duela %s segundu', '%s segundu barru'],
+    ['orain', 'denbora bat barru'],
     ['duela minutu 1', 'minutu 1 barru'],
     ['duela %s minutu', '%s minutu barru'],
     ['duela ordu 1', 'ordu 1 barru'],

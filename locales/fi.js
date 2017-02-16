@@ -1,7 +1,7 @@
 module.exports = function(number, index) {
   return [
     ['juuri äsken', 'juuri nyt'],
-    ['%s sekuntia sitten', '%s sekunnin päästä'],
+    ['juuri äsken', 'juuri nyt'],
     ['minuutti sitten', 'minuutin päästä'],
     ['%s minuuttia sitten', '%s minuutin päästä'],
     ['tunti sitten', 'tunnin päästä'],

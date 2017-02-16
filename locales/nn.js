@@ -1,7 +1,7 @@
 module.exports = function(number, index) {
   return [
     ['nett no', 'om litt'],
-    ['%s sekund sidan', 'om %s sekund'],
+    ['nett no', 'om litt'],
     ['1 minutt sidan', 'om 1 minutt'],
     ['%s minutt sidan', 'om %s minutt'],
     ['1 time sidan', 'om 1 time'],

@@ -1,7 +1,7 @@
 module.exports = function(number, index) {
   return [
     ['vừa xong', 'một lúc'],
-    ['%s giây trước', 'trong %s giây'],
+    ['vừa xong', 'một lúc'],
     ['1 phút trước', 'trong 1 phút'],
     ['%s phút trước', 'trong %s phút'],
     ['1 giờ trước', 'trong 1 giờ'],

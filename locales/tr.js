@@ -1,7 +1,7 @@
 module.exports = function(number, index) {
   return [
     ['az önce', 'şimdi'],
-    ['%s saniye önce', '%s saniye içinde'],
+    ['az önce', 'şimdi'],
     ['1 dakika önce', '1 dakika içinde'],
     ['%s dakika önce', '%s dakika içinde'],
     ['1 saat önce', '1 saat içinde'],

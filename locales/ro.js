@@ -1,7 +1,7 @@
 module.exports = function(number, index) {
   var langTable = [
     ['chiar acum', 'chiar acum'],
-    ['acum %s secunde', 'peste %s secunde'],
+    ['chiar acum', 'chiar acum'],
     ['acum un minut', 'peste un minut'],
     ['acum %s minute', 'peste %s minute'],
     ['acum o oră', 'peste o oră'],

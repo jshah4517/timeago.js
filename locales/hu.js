@@ -1,7 +1,7 @@
 module.exports = function(number, index) {
   return [
     ['éppen most', 'éppen most'],
-    ['%s másodperce', '%s másodpercen belül'],
+    ['éppen most', 'éppen most'],
     ['1 perce', '1 percen belül'],
     ['%s perce', '%s percen belül'],
     ['1 órája', '1 órán belül'],

@@ -4,7 +4,7 @@
 // and all other numbers higher than 21 which end in 2,3,4
 var l = [
   ['w tej chwili', 'za chwilę'],
-  ['%s sekund temu', 'za %s sekund'],
+  ['w tej chwili', 'za chwilę'],
   ['1 minutę temu', 'za 1 minutę'],
   ['%s minut temu', 'za %s minut'],
   ['1 godzinę temu', 'za 1 godzinę'],

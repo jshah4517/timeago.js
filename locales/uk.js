@@ -9,7 +9,7 @@ var seconds = formatNum.bind(null, 'секунду', '%s секунду', '%s с
 module.exports = function (number, index) {
   switch (index) {
     case 0: return ['щойно', 'через декілька секунд']
-    case 1: return [seconds(number) + ' тому', 'через ' + seconds(number)]
+    case 1: return ['щойно', 'через декілька секунд']
     case 2:
     case 3: return [minutes(number) + ' тому', 'через ' + minutes(number)]
     case 4:

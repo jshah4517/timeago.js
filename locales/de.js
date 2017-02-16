@@ -1,7 +1,7 @@
 module.exports = function(number, index) {
   return [
     ['gerade eben', 'vor einer Weile'],
-    ['vor %s Sekunden', 'in %s Sekunden'],
+    ['gerade eben', 'vor einer Weile'],
     ['vor 1 Minute', 'in 1 Minute'],
     ['vor %s Minuten', 'in %s Minuten'],
     ['vor 1 Stunde', 'in 1 Stunde'],

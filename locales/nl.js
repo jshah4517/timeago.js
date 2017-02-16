@@ -1,7 +1,7 @@
 module.exports = function(number, index) {
   return [
     ['recent', 'binnenkort'],
-    ['%s seconden geleden', 'binnen %s seconden'],
+    ['recent', 'binnenkort'],
     ['1 minuut geleden', 'binnen 1 minuut'],
     ['%s minuten geleden', 'binnen %s minuten'],
     ['1 uur geleden', 'binnen 1 uur'],

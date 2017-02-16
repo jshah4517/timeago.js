@@ -1,5 +1,5 @@
 module.exports = function(number, index) {
-    if (index === 0) {
+    if (index === 0 || index === 1) {
         return [ 'منذ لحظات', 'بعد لحظات' ];
     }
 

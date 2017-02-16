@@ -1,7 +1,7 @@
 module.exports = function(number, index) {
   return [
     ['poco fa', 'tra poco'],
-    ['%s secondi fa', '%s secondi da ora'],
+    ['poco fa', 'tra poco'],
     ['un minuto fa', 'un minuto da ora'],
     ['%s minuti fa', '%s minuti da ora'],
     ['un\'ora fa', 'un\'ora da ora'],

@@ -1,7 +1,7 @@
 module.exports = function(number, index) {
   return [
     ['à l\'instant', 'dans un instant'],
-    ['il y a %s secondes', 'dans %s secondes'],
+    ['à l\'instant', 'dans un instant'],
     ['il y a 1 minute', 'dans 1 minute'],
     ['il y a %s minutes', 'dans %s minutes'],
     ['il y a 1 heure', 'dans 1 heure'],

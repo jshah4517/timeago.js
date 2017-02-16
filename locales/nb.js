@@ -1,7 +1,7 @@
 module.exports = function(number, index) {
   return [
     ['akkurat nå', 'om litt'],
-    ['%s sekunder siden', 'om %s sekunder'],
+    ['akkurat nå', 'om litt'],
     ['1 minutt siden', 'om 1 minutt'],
     ['%s minutter siden', 'om %s minutter'],
     ['1 time siden', 'om 1 time'],
