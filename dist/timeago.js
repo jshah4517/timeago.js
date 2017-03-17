@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2016 hustcc
  * License: MIT
- * Version: v2.0.5
+ * Version: v2.0.6
  * https://github.com/hustcc/timeago.js
 **/
 /* jshint expr: true */
@@ -57,8 +57,8 @@ function () {
     locale = locales[locale] ? locale : (locales[defaultLocale] ? defaultLocale : 'en');
     // if (! locales[locale]) locale = defaultLocale;
     var i = 0,
-      agoin = diff < 0 ? 1 : 0; // timein or timeago
-    diff = Math.abs(diff);
+      agoin = diff < 0 ? 1 : 0, // timein or timeago
+      total_sec = diff = Math.abs(diff);
 
     for (; diff >= SEC_ARRAY[i] && i < SEC_ARRAY_LEN; i++) {
       diff /= SEC_ARRAY[i];
@@ -67,7 +67,7 @@ function () {
     i *= 2;
 
     if (diff > (i === 0 ? 9 : 1)) i += 1;
-    return locales[locale](diff, i)[agoin].replace('%s', diff);
+    return locales[locale](diff, i, total_sec)[agoin].replace('%s', diff);
   }
   // calculate the diff second between date to be formated an now date.
   function diffSec(date, nowDate) {
