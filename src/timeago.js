@@ -73,8 +73,10 @@ function () {
     return locales[locale](diff, i, total_sec)[agoin].replace('%s', diff);
   }
   // calculate the diff second between date to be formated an now date.
-  function diffSec(date, nowDate) {
-    nowDate = nowDate ? toDate(nowDate) : new Date();
+  function diffSec(date, offset) {
+    var nowDate = new Date();
+    // If we have an offset, minus it to get the relative time
+    if (offset) nowDate = new Date(nowDate.getTime() - offset);
     return (nowDate - toDate(date)) / 1000;
   }
   /**
@@ -126,7 +128,9 @@ function () {
    * var timeago = timeagoLib('2016-09-10', 'zh_CN'); // the relative date is 2016-09-10, and locale is zh_CN, so the 2016-09-11 will be 1天前.
   **/
   function Timeago(nowDate, defaultLocale) {
-    this.nowDate = nowDate;
+    // this.nowDate = nowDate; // This is no longer used
+    // If we've entered a relative date, work out the offset from current date
+    this.offset = nowDate ? (new Date() - toDate(nowDate)) : 0;
     // if do not set the defaultLocale, set it with `en`
     this.defaultLocale = defaultLocale || 'en'; // use default build-in locale
     // for dev test
@@ -134,7 +138,7 @@ function () {
   }
   // what the timer will do
   Timeago.prototype.doRender = function(node, date, locale) {
-    var diff = diffSec(date, this.nowDate),
+    var diff = diffSec(date, this.offset),
       self = this,
       tid;
     // delete previously assigned timeout's id to node
@@ -159,7 +163,7 @@ function () {
    * timeago.format(1473473400269); // timestamp with ms
   **/
   Timeago.prototype.format = function(date, locale) {
-    return formatDiff(diffSec(date, this.nowDate), locale, this.defaultLocale);
+    return formatDiff(diffSec(date, this.offset), locale, this.defaultLocale);
   };
   /**
    * render: render the DOM real-time.
